@@ -157,3 +157,46 @@ body {
   background: #2b3a67;
   color: #fff;
 }
+
+/* AI-generated: cost calculator styling */
+.calculator {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.calculator h2 {
+  margin-bottom: 1rem;
+}
+
+.calc-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.calc-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.calc-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 150px;
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.calc-result {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
