@@ -134,3 +134,26 @@ body {
 .skill-card.expanded .details {
   display: block;
 }
+
+/* AI-generated: filter button styling */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #2b3a67;
+  background: #fff;
+  color: #2b3a67;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #2b3a67;
+  color: #fff;
+}
