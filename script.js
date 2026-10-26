@@ -74,3 +74,31 @@ document.getElementById('calc-btn').addEventListener('click', () => {
   const total = calculateTotalCost(rate, hours);
   document.getElementById('calc-result').textContent = `Total cost: $${total.toFixed(2)}`;
 });
+
+document.getElementById('match-btn').addEventListener('click', () => {
+  const userNeeds = {
+    category: document.getElementById('match-category').value,
+    maxPrice: Number(document.getElementById('match-price').value)
+  };
+
+  const matches = matchSkillsToUser(userNeeds, skills);
+  const results = document.getElementById('match-results');
+  results.innerHTML = '';
+
+  if (matches.length === 0) {
+    results.innerHTML = '<p>No matches found. Try a higher max price or another category.</p>';
+    return;
+  }
+
+  matches.forEach(skill => {
+    const card = document.createElement('article');
+    card.className = 'skill-card';
+    card.innerHTML = `
+      <h3>${skill.title}</h3>
+      <p class="provider">Taught by ${skill.provider}</p>
+      <p class="price">${skill.price === 0 ? 'Free' : '$' + skill.price + ' / hour'}</p>
+      <p>${skill.description}</p>
+    `;
+    results.appendChild(card);
+  });
+});
