@@ -29,44 +29,15 @@
 
     <section id="skills" class="skills">
       <h2>Featured Skills</h2>
-      <!-- AI-generated: hardcoded skill cards -->
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>Intro to Python</h3>
-          <p class="provider">Taught by Maya R.</p>
-          <p class="price">$15 / hour</p>
-          <p>Learn variables, loops, and functions by building small projects.</p>
-          <p class="hint">Click to see more</p>
-          <p class="details">Available weekday evenings in the library. Beginners welcome, bring a laptop.</p>
-        </article>
 
-        <article class="skill-card">
-          <h3>Guitar Basics</h3>
-          <p class="provider">Taught by Jake T.</p>
-          <p class="price">$10 / hour</p>
-          <p>Learn basic chords, strumming patterns, and your first song.</p>
-          <p class="hint">Click to see more</p>
-          <p class="details">Weekends in the music building. Guitars available to borrow.</p>
-        </article>
-
-        <article class="skill-card">
-          <h3>Conversational Spanish</h3>
-          <p class="provider">Taught by Sofia L.</p>
-          <p class="price">Free / skill trade</p>
-          <p>Practice everyday Spanish conversation with a native speaker.</p>
-          <p class="hint">Click to see more</p>
-          <p class="details">Open to trading for coding or math help. Meets in the student union.</p>
-        </article>
-
-        <article class="skill-card">
-          <h3>Calculus I Tutoring</h3>
-          <p class="provider">Taught by Ivan</p>
-          <p class="price">$12 / hour</p>
-          <p>Get help with limits, derivatives, and exam prep.</p>
-          <p class="hint">Click to see more</p>
-          <p class="details">Flexible schedule. Can review homework and practice exams together.</p>
-        </article>
+      <div class="filters">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Programming">Programming</button>
+        <button class="filter-btn" data-category="Music">Music</button>
+        <button class="filter-btn" data-category="Career">Career</button>
       </div>
+
+      <div id="skills-grid" class="skills-grid"></div>
     </section>
   </main>
 
@@ -74,6 +45,7 @@
     <p>&copy; 2026 Skill Swap. Built by Ivan.</p>
   </footer>
 
+  <script src="skillswap-functions.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
