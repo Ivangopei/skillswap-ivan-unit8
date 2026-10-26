@@ -66,3 +66,11 @@ filterButtons.forEach(button => {
 
 // Show all skills when the page loads
 renderSkills(skills);
+
+document.getElementById('calc-btn').addEventListener('click', () => {
+  const rate = Number(document.getElementById('rate-input').value);
+  const hours = Number(document.getElementById('hours-input').value);
+
+  const total = calculateTotalCost(rate, hours);
+  document.getElementById('calc-result').textContent = `Total cost: $${total.toFixed(2)}`;
+});
